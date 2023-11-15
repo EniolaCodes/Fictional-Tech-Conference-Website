@@ -76,6 +76,7 @@
     }
     body{
       font-size: 1rem;
+    
     }
     h1,
     h2,
@@ -85,11 +86,9 @@
     }
   }
   /* =======globa classes====== */
- 
+  
   /* =====section===== */
-  section{
-    padding: 5rem 0;
-  }
+ 
 .section-center{
   width: 90vw;
   margin: 0 auto;
@@ -99,4 +98,22 @@
   .section-center{
     width: 95vw;
   }
+}
+@media (max-width:768px){
+  .rainbow{
+    display: none;
+  }
+}
+.rainbow{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background:  linear-gradient(90deg, hsl(0, 100%, 50%), hsl(30, 100%, 50%), hsl(60, 100%, 50%),
+   hsl(90, 100%, 50%), hsl(120, 100%, 50%), hsl(150, 100%, 50%), hsl(180, 100%, 50%),
+    hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsla(270, 100%, 50%, 0.181), hsl(300, 100%, 50%),
+     hsl(330, 100%, 50%), hsl(360, 100%, 50%));
+    
+     box-shadow: 1rem 1rem 1rem 0.5rem hsl(0, 100%, 50%), 1rem 1rem 1rem 0.5rem hsl(120, 100%, 50%), 
+     -1rem 0 0.4rem 0.5rem hsl(240, 100%, 50%), -1rem 0 0.4rem 0.5rem hsl(300, 100%, 50%);
 }
