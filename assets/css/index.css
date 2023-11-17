@@ -15,8 +15,8 @@
 
   /* ========Global Styles========== */
   *,
-  ::after,
-  ::before{
+  :after,
+  :before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,6 +35,7 @@
   }
   img{
     width: 100%;
+    height: 100%;
     display: block;
   }
   h1,
@@ -116,4 +117,31 @@
     
      box-shadow: 1rem 1rem 1rem 0.5rem hsl(0, 100%, 50%), 1rem 1rem 1rem 0.5rem hsl(120, 100%, 50%), 
      -1rem 0 0.4rem 0.5rem hsl(240, 100%, 50%), -1rem 0 0.4rem 0.5rem hsl(300, 100%, 50%);
+}
+.artContainer{
+  position: relative;
+  display: inline-block;;
+}
+
+
+
+.artContainer::after{
+  content: "";
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-top: 5px solid hsl(300, 100%, 50%);
+  border-right: 5px solid hsl(300, 100%, 50%);
+  top: -1rem;
+  right:-1rem;
+  border-radius: 0.25rem;
+  
+  
+}
+
+.art{
+  display: block;
+  width: 500px;
+  height: 600px;
+  border-radius: 0.25rem;
 }
